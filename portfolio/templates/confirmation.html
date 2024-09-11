@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent</title>
+    <style>
+        /* Confirmation Page */
+        confirmation {
+            background-color: #f4f4f9;  /* Light background for a clean look */
+            padding: 50px 0;  /* Add padding to the top and bottom */
+            text-align: center;
+        }
+
+        confirmation h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        confirmation p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        #confirmation .back-btn {
+            background-color: #3498db;  /* Green button */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        confirmation .back-btn:hover {
+            background-color: #0c3e60;  /* Darker green on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <section id="confirmation">
+        <h2>Message Sent</h2>
+        <p>Your message has been sent successfully. Thank you for reaching out!</p>
+        <a href="{{ url_for('index') }}" class="back-btn">Go Back</a>
+    </section>
+</body>
+</html>
